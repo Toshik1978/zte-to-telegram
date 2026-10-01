@@ -77,4 +77,3 @@ secrets).
 
 - Commit directly on `main`.
 - Never push without explicit approval.
-- **Never add `Co-Authored-By` or any other AI-attribution trailer to commit messages.**
