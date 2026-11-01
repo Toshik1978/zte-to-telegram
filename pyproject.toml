@@ -11,7 +11,7 @@ dependencies = [
     "requests==2.34.2",
     "jsonpath-ng==1.14.0",
     "pygsm7==1.0.6",
-    "python-dateutil==2.9.0.post0",
+    "python-dateutil==4.0.0",
     "python-dotenv==1.2.4",
     "pycryptodome==3.23.0",
 ]
