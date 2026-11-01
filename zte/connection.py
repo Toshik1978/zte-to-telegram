@@ -93,7 +93,7 @@ class ZteConnection:
         """Get the list of all SMS."""
 
         if unread:
-            query = parse("$.messages[?(@.tag == '1' & @.received_all_concat_sms == '1')]")
+            query = parse("$.messages[?(@.tag == '1' && @.received_all_concat_sms == '1')]")
         else:
             query = parse("$.messages[?(@.received_all_concat_sms == '1')]")
 
@@ -109,7 +109,7 @@ class ZteConnection:
     def read_all_sms(self, delete: bool) -> list:
         """Read all new SMS, then mark them read or delete them."""
 
-        query = parse("$.messages[?(@.tag == '1' & @.received_all_concat_sms == '1')]")
+        query = parse("$.messages[?(@.tag == '1' && @.received_all_concat_sms == '1')]")
 
         r = self.__get_sms_list(0, 500)
         r.raise_for_status()
