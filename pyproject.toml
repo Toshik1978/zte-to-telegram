@@ -9,7 +9,7 @@ requires-python = ">=3.14"
 dependencies = [
     "click==8.5.0",
     "requests==2.34.2",
-    "jsonpath-ng==1.14.0",
+    "jsonpath-ng==1.15.0",
     "pygsm7==1.0.6",
     "python-dateutil==4.0.0",
     "python-dotenv==1.2.4",
